@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+annotate view ZC_END_055_STUDENT
+  with 
+{
+  /* --- UI Facets (Object Page Layout) --- */
+  @UI.facet: [ { id:              'StudentInfo',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Student Information',
+                 position:        10 } ]
+
+  /* --- Field Annotations --- */
+  
+  @UI: { lineItem:       [ { position: 10, label: 'Student ID' } ],
+         identification: [ { position: 10, label: 'Student ID' } ] }
+  StudentID;
+
+  @Search.defaultSearchElement: true
+  @UI: { lineItem:       [ { position: 20, label: 'First Name' } ],
+         identification: [ { position: 20, label: 'First Name' } ] }
+  FirstName;
+
+  @Search.defaultSearchElement: true
+  @UI: { lineItem:       [ { position: 30, label: 'Last Name' } ],
+         identification: [ { position: 30, label: 'Last Name' } ] }
+  LastName;
+
+  @UI: { lineItem:       [ { position: 40, label: 'Age' } ],
+         identification: [ { position: 40, label: 'Age' } ] }
+  Age;
+
+  @UI: { lineItem:       [ { position: 50, label: 'Grade' } ],
+         identification: [ { position: 50, label: 'Grade' } ] }
+  CourseGrade;
+
+  /* Hide administrative fields from the UI entirely */
+  @UI.hidden: true
+  LastChangedAt;
+}

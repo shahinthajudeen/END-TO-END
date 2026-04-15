@@ -1,0 +1,13 @@
+unmanaged implementation in class zbp_i_end_055_student unique;
+strict ( 2 );
+
+define behavior for ZI_END_055_STUDENT alias Student
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) StudentID;
+}

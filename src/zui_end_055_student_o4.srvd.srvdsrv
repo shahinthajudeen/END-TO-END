@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Def for Student App'
+define service ZUI_END_055_STUDENT_O4 {
+  expose ZC_END_055_STUDENT as Student;
+}
